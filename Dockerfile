@@ -1,4 +1,5 @@
 FROM ghcr.io/ezmldev/mlflow:v1.0
+LABEL org.opencontainers.image.source https://github.com/ezmldev/docker-model-serving
 COPY requirements.txt /app/
 WORKDIR /app
 RUN pip install -r requirements.txt
