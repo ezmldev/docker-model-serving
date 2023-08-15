@@ -33,7 +33,6 @@ class MLService:
         @self.app.post("/invocations/")
         async def invocations(payload: dict):
             try:
-                print(payload)
                 return int(self.model.predict(payload))
             except Exception as e:
                 raise HTTPException(
