@@ -1,4 +1,4 @@
-FROM ghcr.io/ezmldev/mlflow:v1.0
+FROM ghcr.io/ezmldev/mlflow:v2.6.0
 LABEL org.opencontainers.image.source https://github.com/ezmldev/docker-serving-api
 COPY requirements.txt /app/
 WORKDIR /app
