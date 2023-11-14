@@ -5,4 +5,4 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 COPY *.py /app/
 ENV MODEL_PATH=/model
-CMD ["sh", "-c", "${MODEL_PATH}/python/venv/bin/python", "service.py" ]
+CMD ["sh", "-c", "${MODEL_PATH}/venv/bin/python", "service.py" ]
